@@ -3,11 +3,11 @@ const app = express();
 const { exec, execSync } = require('child_process');
 const port = process.env.SERVER_PORT || process.env.PORT || 5000;        
 const UUID = process.env.UUID || 'a2a687bf-c8c2-4438-813e-b2633250c065'; //若需要改UUID，需要在config.json里改为一致
-const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nz.f4i.cn';     
-const NEZHA_PORT = process.env.NEZHA_PORT || '5555';                     // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一开启tls
-const NEZHA_KEY = process.env.NEZHA_KEY || '5ddVS93Eq0Uc9he880';
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'cho20.bliyniom.cf';     // 建议使用token，argo端口8080，cf后台设置需对应,使用json需上传json和yml文件至files目录
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiYjg3ZTc3MmM3YjY3OGNhYzE4OTI3ZjQ3NzEyODBhODciLCJ0IjoiMDExMDU0MjMtOGFmMy00OGZmLTkwMDctMTYxYzhkZDcxYzIzIiwicyI6Ik9UbG1PVFJsTkRndE1UUXhZUzAwTm1NM0xXSXpNRFV0TW1NeVpUQXhOemRoWkRVMyJ9';
+const NEZHA_SERVER = process.env.NEZHA_SERVER || '';     
+const NEZHA_PORT = process.env.NEZHA_PORT || '';                     // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一开启tls
+const NEZHA_KEY = process.env.NEZHA_KEY || '';
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'www.12t0pfgy.dpdns.org';     // 建议使用token，argo端口8080，cf后台设置需对应,使用json需上传json和yml文件至files目录
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiM2Y0NGI2Njc3YzFiZmY5ZWJlMGQxNTJlMmVkY2I1YzYiLCJ0IjoiYWZlNTRmY2ItYmU0OC00MjkxLWI1MmUtY2M4YjQzMzdlODk2IiwicyI6IllUTXhNVGd4TUdRdE4yRmxOaTAwT0RrekxUZzVZall0WlRobFpUVTJNelJoTUdRdyJ9';
 const CFIP = process.env.CFIP || 'na.ma';
 const NAME = process.env.NAME || 'Choreo';
 
