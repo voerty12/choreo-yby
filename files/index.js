@@ -6,9 +6,9 @@ const UUID = process.env.UUID || 'a2a687bf-c8c2-4438-813e-b2633250c065'; //若�
 const NEZHA_SERVER = process.env.NEZHA_SERVER || '';     
 const NEZHA_PORT = process.env.NEZHA_PORT || '';                     // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一开启tls
 const NEZHA_KEY = process.env.NEZHA_KEY || '';
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'www.12t0pfgy.dpdns.org';     // 建议使用token，argo端口8080，cf后台设置需对应,使用json需上传json和yml文件至files目录
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiM2Y0NGI2Njc3YzFiZmY5ZWJlMGQxNTJlMmVkY2I1YzYiLCJ0IjoiYWZlNTRmY2ItYmU0OC00MjkxLWI1MmUtY2M4YjQzMzdlODk2IiwicyI6IllUTXhNVGd4TUdRdE4yRmxOaTAwT0RrekxUZzVZall0WlRobFpUVTJNelJoTUdRdyJ9';
-const CFIP = process.env.CFIP || 'na.ma';
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';     // 建议使用token，argo端口8080，cf后台设置需对应,使用json需上传json和yml文件至files目录
+const ARGO_AUTH = process.env.ARGO_AUTH || '';
+const CFIP = process.env.CFIP || 'www.visakorea.com';
 const NAME = process.env.NAME || 'Choreo';
 
 // root route
